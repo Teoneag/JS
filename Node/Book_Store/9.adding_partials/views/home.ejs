@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./includes/head'); %>
+    <title>Home</title>
+   
+</head>
+<body>
+
+    <%- include('./includes/header'); %>
+
+    <div class="show-list">
+
+        <table id="books">
+            <tr>
+                <td>Book Title</td>
+                <td>edit</td>
+                <td>delete</td>
+            </tr>
+            <% for(var i=0; i<data.length; i++) {%>
+                <tr>
+                <td><%= data[i]['title'] %></td>
+                <td> <a href="#">edit</a></td>
+                <td><a href="#">delete</a></td>
+               </tr>
+             <% } %>
+        </table>
+   
+    </div>
+</body>
+</html>

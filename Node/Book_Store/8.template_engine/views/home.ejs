@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/books.css">
+</head>
+<body>
+    <div class="show-list">
+
+        <table id="books">
+            <tr>
+                <td>Book Title</td>
+                <td>edit</td>
+                <td>delete</td>
+            </tr>
+            <% for(var i=0; i<data.length; i++) {%>
+                <tr>
+                <td><%= data[i] %></td>
+                <td> <a href="#">edit</a></td>
+                <td><a href="#">delete</a></td>
+               </tr>
+             <% } %>
+        </table>
+   
+    </div>
+</body>
+</html>
